@@ -9,10 +9,8 @@ Maintainer: jean-marc mercier
 License: new BSD
 Platform: UNKNOWN
 Classifier: Development Status :: 2 - Pre-Alpha
-Classifier: Environment :: Win32 (MS Windows)
 Classifier: Programming Language :: Python
 Classifier: Topic :: Scientific/Engineering
-Classifier: Operating System :: Microsoft :: Windows :: Windows 10
 Description-Content-Type: text/markdown
 License-File: license
 
