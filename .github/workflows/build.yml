@@ -41,3 +41,25 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           path: ./wheelhouse/*.whl
+          
+    build:
+        runs-on: ${{ matrix.os }}
+        defaults:
+          run:
+            shell: bash -l {0}
+        strategy:
+          fail-fast: false
+          matrix:
+            os: [ ubuntu-20.04, macos-11, windows-2022 ]
+            python-version: [ 3.7, 3.9, "3.10", "3.11"]
+            include:
+              - os: ubuntu-20.04
+                python-version: 3.8
+                openmp: "True"
+              - os: ubuntu-20.04
+                python-version: 3.8
+              - os: macos-11
+                python-version: 3.8
+                single_action_config: "True"
+              - os: windows-2019
+                python-version: 3.8
