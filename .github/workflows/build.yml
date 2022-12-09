@@ -15,7 +15,7 @@ jobs:
     # The job
     name: Python ${{ matrix.python-version }} / ${{ matrix.os }}
     
-    # The steps in the job. Each step either RUNS code, or USES an action
+    # The steps in the job. Each step either RUNS code, or USES an action.
     steps:
     
       - name: Checkout
