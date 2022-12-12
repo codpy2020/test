@@ -54,12 +54,12 @@ jobs:
             python-version: [ 3.9, "3.10"]
             include:
               - os: ubuntu-20.04
-                python-version: 3.9
+                python-version: 3.8
                 openmp: "True"
               - os: ubuntu-20.04
-                python-version: 3.9
+                python-version: 3.8
               - os: macos-11
-                python-version: 3.9
+                python-version: 3.8
                 single_action_config: "True"
               - os: windows-2019
-                python-version: 3.9
+                python-version: 3.8
